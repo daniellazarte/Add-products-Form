@@ -1,0 +1,37 @@
+body{
+	font-family: 'Open Sans Light', sans-serif;
+}
+.done-true{
+	text-decoration: line-through;
+	color: grey;
+}
+h1{
+	font-size: 35px;
+	color: #2E64FE;
+
+}
+.textbox {
+	font-style: italic;
+	font-size: 16px;
+	border-radius: 5px;
+	padding-left: 5px;
+	border-style: solid;
+	border-color: #FACC2E;
+	
+}
+.unstyled{
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.unstyled li{
+	list-style: none;
+}
+.boton{
+	border-radius: 5px;
+	background-color: #2E64FE;
+	color: #FFF;
+	font-size: 14px;
+	border-style: none;
+	padding: 5px 5px 5px 5px;
+}

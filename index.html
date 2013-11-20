@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	<script type="text/javascript" src="todo.js"></script>
+	<link rel="stylesheet" href="todo.css">
+	<title>Angular.js Ejemplo Basico 2</title>
+</head>
+<body>
+<h1>Mi primera Lista</h1>
+<div ng-controller="TodoCtrl">
+<span>{{remaining()}} de {{todos.length}} mostrando</span>
+[ <a href="" ng-click="archive()">Archivos</a> ]
+<ul class="unstyled">
+	<li ng-repeat="todo in todos">
+		<input type="checkbox" ng-model="todo.done" class="list">
+		<span class="done-{{todo.done}}">{{todo.text}}</span>
+		
+	</li>
+</ul>
+	
+	<form ng-submit="addTodo()">
+		<input type="text"  class="textbox" ng-model="todoText" size="30" placeholder="Agrega tu producto a la lista">
+		<input type="submit" class="boton" value="Agregar">
+	</form>
+</div>
+	
+</body>
+</html>
